@@ -8,8 +8,7 @@ app.config['SECRET_KEY'] = '163e34c5745bafbebe6e4c88794ab33f'
 @app.route("/calculator/greeting", methods=['GET'])
 def greeting():
     if(request.method == 'GET'):
-        data = { 'hello world!'
-        }
+        data = 'hello world!'
   
         return jsonify(data)
     return 'hello world!'
