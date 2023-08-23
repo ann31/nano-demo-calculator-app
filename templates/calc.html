@@ -1,0 +1,23 @@
+<head>
+    <title>Calculator</title>
+</head>
+<body>
+    <form method="POST" action="">
+        {{ form.hidden_tag() }} 
+        <fieldset class="form-group">
+            
+            <div class="form-group">
+                {{ form.number1.label( class = "form-control-label") }}
+                {{ form.number1( class = "form-control form-control-label") }}
+            </div>
+            <div class="form-group">
+                {{ form.number2.label( class = "form-control-label") }}
+                {{ form.number2( class = "form-control form-control-label") }}
+            </div>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+        </fieldset>
+    </form>
+    {{ res }}
+</body>
