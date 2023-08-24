@@ -7,11 +7,7 @@ app.config['SECRET_KEY'] = '163e34c5745bafbebe6e4c88794ab33f'
 
 @app.route("/calculator/greeting", methods=['GET'])
 def greeting():
-    data = {
-        'code' : 200,
-        'content':'hello world!'}
-    return jsonify(data)
-    #return 'hello world!'
+    return 'hello world!'
 
 @app.route("/calculator/add", methods=['GET','POST'])
 def add():
